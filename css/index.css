@@ -1,0 +1,167 @@
+/* Moviles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.menu{
+  display: none;
+}
+
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+  color:white;
+}
+
+.navbar{
+  background-color: rgb(105,105,105);
+  margin-left: 10px;
+}
+
+main{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product{
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/* Tablets 768-1024 */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .product{
+    border-radius: 5px;
+    margin: 1px;
+    border-color: rgb(240,240,240);
+  }
+
+  p{
+    text-align: left;
+    padding: 5px;
+  }
+
+  nav{
+    margin-top: 4px;
+  }
+
+  footer{
+    border-top: 5px solid rgb(240,240,240);
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1025px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-right: 25%;
+  }
+
+  .menu{
+    flex-direction: row; 
+    justify-content: flex-end;
+    display: contents;
+    display: flex;
+    color: white;
+    list-style: none;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .product{
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-basis: 100%;
+    border-radius: 5px;
+    border-color: rgb(240,240,240);
+  }
+
+  p{
+    text-align: left;
+    padding: 5px;
+  }
+
+  .logo{
+    margin-right: 5%;
+  }
+
+  nav{
+    margin-right: 10px;
+    height: 40px;
+  }
+
+  li{
+    margin-right: 25px;
+    margin-left:  45px;
+    margin-top: 10px;
+  }
+
+  .social{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer{
+    border-top: 5px solid rgb(240,240,240);
+  }
+}
+
